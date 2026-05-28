@@ -3,5 +3,6 @@ export interface Task {
     titulo: string;
     descripcion: string;
     finalizado: boolean;
-    prioridad: 'baja' | 'media' | 'alta';
+    // el ? es para que sea opcional, no es necesario ponerlo en el home.page.ts
+    prioridad?: 'baja' | 'media' | 'alta';
 }
